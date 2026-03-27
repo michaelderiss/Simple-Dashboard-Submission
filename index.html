@@ -1,105 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist Portfolio | Eric Hypothetical</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO -->
-    <meta name="description" content="Official portfolio of [Artist Name]. Explore artwork, career highlights, and upcoming shows.">
+  <!-- ✅ Tailwind CSS v4 (correct CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Eric Hypothetical",
-        "jobTitle": "Artist",
-        "url": "https://EricHypothetical.com"
-    }
-    </script>
+  <title>Influencer Dashboard</title>
 </head>
-<body>
 
-    <!-- HEADER -->
-    <header>
-        <nav aria-label="Main navigation">
-            <h1 class="logo">Eric Hypothetical</h1>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#career">Career</a></li>
-                <li><a href="#shows">Shows</a></li>
-                <li><a href="#work-sample">Work-Sample</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- MAIN CONTENT -->
-    <main>
+  <!-- 🔷 CONTAINER -->
+  <div class="max-w-7xl mx-auto p-4 space-y-6">
 
-        <!-- HERO -->
-    <section id="hero" class="section hero">
-        <div class="content">
-            <div class="text">
-            <h2>Welcome to My World</h2>
-            <p>Discover my art, journey, and upcoming exhibitions.</p>
-            </div>
+    <!-- ===================== -->
+    <!-- 🔝 TOP: KPI SECTION -->
+    <!-- ===================== -->
+    <section>
+      <h1 class="text-2xl font-bold mb-4">Dashboard Overview</h1>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- KPI CARD -->
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h2 class="text-sm text-gray-500">Total Revenue</h2>
+          <p class="text-2xl font-bold">€3,200</p>
         </div>
+
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h2 class="text-sm text-gray-500">Conversions</h2>
+          <p class="text-2xl font-bold">120</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h2 class="text-sm text-gray-500">Engagement Rate</h2>
+          <p class="text-2xl font-bold">4.5%</p>
+        </div>
+
+      </div>
     </section>
 
-        <!-- ABOUT -->
-        <section id="about" class="section">
-            <div class="content">
-                <h2>About Me</h2>
-                <p>
-                    I am a passionate artist exploring creativity through color, texture, and emotion.
-                </p>
-            </div>
-        </section>
+    <!-- ===================== -->
+    <!-- ⚙️ MIDDLE: DRIVERS -->
+    <!-- ===================== -->
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Performance Drivers</h2>
 
-        <!-- CAREER -->
-        <section id="career" class="section">
-            <div class="content">
-                <h2>Career</h2>
-                <p>
-                    My journey includes exhibitions, collaborations, and years of artistic exploration.
-                </p>
-            </div>
-        </section>
+      <div class="grid gap-4 md:grid-cols-2">
 
-        <!-- SHOWS -->
-        <section id="shows" class="section">
-            <div class="content">
-                <h2>Upcoming Shows</h2>
-                <ul>
-                    <li>June 2026 – Art Expo, Los Angeles</li>
-                    <li>August 2026 – Gallery Showcase, New York</li>
-                </ul>
-            </div>
-        </section>
+        <!-- Platform Performance -->
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Platform Performance</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Instagram: High engagement</li>
+            <li>TikTok: Best conversions</li>
+            <li>YouTube: Highest revenue</li>
+          </ul>
+        </div>
 
-        <section id="work-sample" class="section work-sample-section">
-            <div class="content">
-                <h2>Work Sample</h2>
-                <p>Here’s a highlight of my latest artwork:</p>
-                <picture>
-                    <source srcset="work-sample.avif" type="image/avif">
-                    <source srcset="work-sample.webp" type="image/webp">
-                    <img src="work-sample.jpg" alt="Artwork sample" class="work-sample">
-                </picture>
-            </div>
-        </section>
+        <!-- Product Performance -->
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold mb-2">Top Products</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Product A: €50</li>
+            <li>Product B: €120</li>
+            <li>Product C: €80</li>
+          </ul>
+        </div>
 
-    </main>
+      </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Eric Hypothetical. All rights reserved.</p>
-    </footer>
+    <!-- ===================== -->
+    <!-- 📊 BOTTOM: TABLE -->
+    <!-- ===================== -->
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Product Details</h2>
 
+      <div class="overflow-x-auto bg-white rounded-xl shadow">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="p-2">Product</th>
+              <th class="p-2">Price</th>
+              <th class="p-2">Conversions</th>
+              <th class="p-2">Commission</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-2">Product A</td>
+              <td class="p-2">€50</td>
+              <td class="p-2">40</td>
+              <td class="p-2">€300</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-2">Product B</td>
+              <td class="p-2">€120</td>
+              <td class="p-2">30</td>
+              <td class="p-2">€540</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-2">Product C</td>
+              <td class="p-2">€80</td>
+              <td class="p-2">50</td>
+              <td class="p-2">€600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
 </body>
 </html>
